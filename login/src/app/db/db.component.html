@@ -1,0 +1,20 @@
+<?php
+// Configurações do servidor
+$local_serve = "localhost";
+$usuario_serve = "u944745277_rcs";
+$senha_serve = "Vicentino15@";
+$banco_de_dados = "u944745277_rcs";
+
+// Conectar ao MySQL usando mysqli
+$conn = mysqli_connect($local_serve, $usuario_serve, $senha_serve, $banco_de_dados);
+
+// Verificar a conexão
+if (!$conn) {
+    die("Conexão falhou: " . mysqli_connect_error());
+} else {
+    echo "Conexão bem-sucedida!";
+}
+
+// Fechar a conexão no final do script (opcional)
+// mysqli_close($conn);
+?>
